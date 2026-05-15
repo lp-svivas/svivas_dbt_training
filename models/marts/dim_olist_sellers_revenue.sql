@@ -27,7 +27,7 @@ SELLERS_METRICS AS (
 SELLER_LATEST_TIER AS (
     SELECT
         SELLER_ID,
-        CASE 
+        CASE
             WHEN MONTHLY_REVENUE >= 5000 THEN 'High'
             WHEN MONTHLY_REVENUE >= 1000 THEN 'Medium'
             ELSE 'Low'
